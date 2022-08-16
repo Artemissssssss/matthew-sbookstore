@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=devices-width, initial-scale=1.0">
+    <title>Matthew's Bookstore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;600;700&display=swap" rel="stylesheet">
+<link  rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="abc-header">
+        <nav>
+            <a href="index.html"><img src="images/logo-removebg-preview (1).png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="books.html">BOOKS</a></li>
+                    <li><a href="discount&vouchers.html">DISCOUNTS & VOUCHERS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+<!----- about us content----->
+    
+<section class="about-us">
+    
+    <div class="row">
+        <div class="artemis-col">
+            <h1>We are the best bookstore in laguna.</h1>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)</p>    
+            <a href="" class="hero-btn red-btn">INQUIRE NOW</a>
+        </div>
+        <div class="artemis-col">
+            <img src="images/reading.jpg">
+        </div>
+    </div>
+</section>
+<!----- Footer ------>
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>We endeavor to broaden consumer loyalty by providing books simple easy
+       using web indexes, brisk and easy-to-understand <br>installment alternatives,
+       and snappier conveyance frameworks. Upside to the majority of this, <br>we are
+       arranged to give energizing offers and charming limits on our book</p>
+       <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+       </div>
+       <p>Made with <i class="fa fa-hand-o-right"></i>by Matthew Labrador</p>
+</section>
+
+<!------Java Script Toggle Menu------>  
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right ="-200px";
+    }
+
+</script>
+
+
+</body>
+</html>

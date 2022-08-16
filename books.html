@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=devices-width, initial-scale=1.0">
+    <title>Matthew's Bookstore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;600;700&display=swap" rel="stylesheet">
+<link  rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="abc-header">
+        <nav>
+            <a href="index.html"><img src="images/logo-removebg-preview (1).png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="books.html">BOOKS</a></li>
+                    <li><a href="discount&vouchers.html">DICOUNTS & VOUCHERS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our books</h1>
+    </section>
+    
+<!------ books ----->
+
+<section class="Books">
+    <h1>Our Selection Of Best Novels</h1>
+    <p>This novels is considered the "Greatest Book Ever Written"</p>
+
+    <div class="row">
+        <div class="books-col">
+            <h3>Tracy Flick Can't Win, by Tom Perrotta</h3>
+            <p>Nearly 25 years after Election was published, Perrotta's hyper-competent heroine returns. Now in her forties, Tracy Flick is ruminating on roads not taken: the #MeToo movement causes her to question a long-ago sexual encounter with a teacher, while caretaking responsibilities have dashed her law school dreams and led her back to Green Meadow High School as the beleaguered assistant principal. With her boss set to retire, Tracy seems like a shoe-in for the top job—but first, she’ll have to overcome the male stakeholders seeking to derail her ascension. Told with Perrotta’s piercing wit, wisdom, and exquisite insight into human folly, Tracy’s second act delivers acerbic insight about frustrated ambition.</p>
+        </div>
+        <div class="books-col">
+            <h3>Phasers On Stun!, by Ryan Britt</h3>
+            <p>Whether you're a tried and true Trekkie or a newbie hooked on Strange New Worlds, there's something for every science fiction obsessive in this lively cultural history of Star Trek. Through extensive reporting and research, Britt takes us inside the franchise's nearly sixty-year history, from its influence on diversifying the space program to its history-making strides for LGBTQIA+ representation. Featuring interviews with multiple generations of cast members and creatives, Phasers On Stun! merrily surprises, informs, and entertains. Read an exclusive excerpt about Star Trek's efforts to diversify television here at Esquire.</p>
+        </div>
+        <div class="books-col">
+            <h3>Raising Lazarus, by Beth Macy</h3>
+            <p>Macy’s gripping follow-up to the mega-bestselling Dopesick finds her in a familiar milieu: back on the frontlines of the opioid crisis, where she embeds with healthcare workers, legislators, and activists seeking to save lives and heal communities. Where Dopesick focused on addiction sufferers and their families, Raising Lazarus turns the lens to the fight for justice, from the prosecution of the Sackler family to the reformers pioneering innovative treatments for the afflicted. Enlightening and exhaustive, it’s at once a damning exposé about greed and a moving paean to the power of community activism</p>
+        </div>
+    </div>
+
+
+</section>
+    
+<!----- best selling books ----->
+
+<section class="artemis">
+    <h1> Our Best Seller Novels Books</h1>
+    <p>Being a best seller doesnt mean they wrote great book.</p>
+
+    <div class="row">
+        <div class="arkin-col">
+            <img src="images/pink.jpg">
+            <div class="layer">
+                <h3>THE PINK HOTEL</h3>
+            </div>
+        </div>
+        <div class="arkin-col">
+            <img src="images/nuclear.jpg">
+            <div class="layer">
+                <h3>NUCLEAR FAMILY</h3>
+            </div>
+        </div><div class="arkin-col">
+            <img src="images/night.jpg">
+            <div class="layer">
+                <h3>NIGHT OF THE LIVING REZ</h3>
+            </div>
+        </div>
+    </div>
+</section>
+    
+<!----- store ----->
+    
+<section class="store">
+    <h1>Our Local Stores</h1>
+    <p>When you buy from a small business, an actual person does a little happy dance.</p>
+
+    <div class="row">
+        <div class="stores-col">
+            <img src="images/store1.webp">
+            <h3>LOS BAÑOS</h3>
+            <p>"Wherever I go, bookstores are still the closest thing to a town square."</p>
+        </div>
+        <div class="stores-col">
+            <img src="images/store2.webp">
+            <h3>CALAMBA</h3>
+            <p>"So often, a visit to a Bookshop has cheered me, and reminded me that there are goodthings
+                in the world."</p>
+        </div><div class="stores-col">
+            <img src="images/store3.webp">
+            <h3>SANTA ROSA</h3>
+            <p>"A town isn't a town without a bookstore."</p>
+        </div>
+    </div>
+</section>
+
+    
+
+<!----- Footer ------>
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>We endeavor to broaden consumer loyalty by providing books simple easy
+       using web indexes, brisk and easy-to-understand <br>installment alternatives,
+       and snappier conveyance frameworks. Upside to the majority of this, <br>we are
+       arranged to give energizing offers and charming limits on our book</p>
+       <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+       </div>
+       <p>Made with <i class="fa fa-hand-o-right"></i>by Matthew Labrador</p>
+</section>
+
+<!------Java Script Toggle Menu------>  
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right ="-200px";
+    }
+
+</script>
+
+
+</body>
+</html>
